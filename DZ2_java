@@ -1,0 +1,36 @@
+// +Реализовать функцию возведения числа а в степень b. a, b ∈ Z. Сводя количество выполняемых действий к минимуму. 
+// Пример 1: а = 3, b = 2, ответ: 9 
+// Пример 2: а = 2, b = -2, ответ: 0.25
+// Пример 3: а = 3, b = 0, ответ: 1
+// Пример 4: а = 0, b = 0, ответ: не определено
+// Пример 5
+// входные данные находятся в файле input.txt в виде
+// b 3
+// a 10
+// Результат нужно сохранить в файле output.txt
+// 1000
+import java.util.Scanner;
+import java.io.File;
+class readingFromFile {
+  public static void main(String[] args) throws FileNotFoundException {
+    // String separator = File.separator;
+    File file = new File("https://replit.com/@WhiteMirac1e/JavaLection#input.txt");  
+    Scanner scanner = new Scanner(file);
+    String line = scanner.nextLine();
+    String[] words = line.split( regex: " ");
+    
+    System.out.println(Arrays.toString(words));
+  //   System.out.print("Введите любое целое число: ");
+		// Scanner scan = new Scanner(System.in);
+		// int numA = scan.nextInt();
+  //   System.out.print("Введите любое целое число: ");
+  //   Scanner scan2 = new Scanner(System.in);
+		// int numB = scan2.nextInt();
+  //   int res = 1;
+  //   for (int i = 0; i < numB; i++) {
+  //     res = res * numA;
+  //     System.out.println(res);
+    scanner.close();
+  }     
+    // System.out.println(res);
+}
